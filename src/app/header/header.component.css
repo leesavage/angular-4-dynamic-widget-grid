@@ -1,0 +1,11 @@
+.add-widget {
+    margin-left: 20px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.dashboard-icon {
+    margin-right: 8px;
+}

@@ -1,0 +1,61 @@
+md-card {
+    padding: 0;
+}
+
+.grid {
+    margin: 10px;
+}
+
+md-card:hover > .widget-toolbar {
+    display: inline;
+}
+
+.widget-toolbar {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    background: rgba(232,232,232,.75);
+    z-index: 1000;
+    text-align: right;
+}
+
+.delete-icon {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.widget-container {
+    padding: 10px;
+}
+
+.grid {
+    transform-origin: top center;
+    transition: transform 0.5s;
+}
+
+.grid-item:active, .grid-item.moving {
+    z-index: 2;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.grid-placeholder {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.grid-item {
+    border: 1px solid #FFF;
+    -webkit-transition: width 0.25s, height 0.25s, transform 0.5s;
+    -moz-transition: width 0.25s, height 0.25s, transform 0.5s;
+    -o-transition: width 0.25s, height 0.25s, transform 0.5s;
+    transition: width 0.25s, height 0.25s, transform 0.5s;
+    overflow: hidden;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+}

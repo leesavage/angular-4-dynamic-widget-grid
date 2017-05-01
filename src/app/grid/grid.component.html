@@ -1,0 +1,8 @@
+<div class="grid" [ngGrid]="gridConfig">
+    <md-card *ngFor="let widget of widgets; let i = index" [(ngGridItem)]="widget.config" (onItemChange)="updateItem(i, $event)" (onResize)="onResize(i, $event)" (onDrag)="onDrag(i, $event)">
+        <div class="widget-toolbar handle"><md-icon class="delete-icon" (click)="removeWidget(i);">delete</md-icon></div>
+        <div class="widget-container">
+            <app-widget [componentData]="widget.widgetData"></app-widget>
+        </div>
+    </md-card>
+</div>
